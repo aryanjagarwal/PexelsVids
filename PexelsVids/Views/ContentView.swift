@@ -10,12 +10,14 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            HStack {
+                ForEach(Query.allCases, id: \.self) {
+                    SearchQuery in
+                    QueryTag(query: SearchQuery, isSelected: false)
+                }
+            }
         }
-        .padding()
+        .background(Color("AccentColor"))
     }
 }
 

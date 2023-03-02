@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7AB4285029B0F3EB001154DD /* VideoManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4284F29B0F3EB001154DD /* VideoManager.swift */; };
 		7ACDCE0329AB44B300743DD3 /* PexelsVidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */; };
 		7ACDCE0529AB44B300743DD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0429AB44B300743DD3 /* ContentView.swift */; };
 		7ACDCE0729AB44B400743DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0629AB44B400743DD3 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7AB4284F29B0F3EB001154DD /* VideoManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoManager.swift; sourceTree = "<group>"; };
 		7ACDCDFF29AB44B300743DD3 /* PexelsVids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PexelsVids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsVidsApp.swift; sourceTree = "<group>"; };
 		7ACDCE0429AB44B300743DD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -34,6 +36,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7AB4285129B0F51A001154DD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7ACDCE0429AB44B300743DD3 /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7ACDCDF629AB44B300743DD3 = {
 			isa = PBXGroup;
 			children = (
@@ -54,10 +64,11 @@
 			isa = PBXGroup;
 			children = (
 				7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */,
-				7ACDCE0429AB44B300743DD3 /* ContentView.swift */,
+				7AB4285129B0F51A001154DD /* Views */,
 				7ACDCE1029AB475E00743DD3 /* Components */,
 				7ACDCE0629AB44B400743DD3 /* Assets.xcassets */,
 				7ACDCE0829AB44B400743DD3 /* Preview Content */,
+				7AB4284F29B0F3EB001154DD /* VideoManager.swift */,
 			);
 			path = PexelsVids;
 			sourceTree = "<group>";
@@ -151,6 +162,7 @@
 				7ACDCE0529AB44B300743DD3 /* ContentView.swift in Sources */,
 				7ACDCE1229AB479400743DD3 /* QueryTag.swift in Sources */,
 				7ACDCE0329AB44B300743DD3 /* PexelsVidsApp.swift in Sources */,
+				7AB4285029B0F3EB001154DD /* VideoManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
