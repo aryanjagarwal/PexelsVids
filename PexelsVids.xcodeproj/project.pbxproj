@@ -66,11 +66,11 @@
 			isa = PBXGroup;
 			children = (
 				7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */,
+				7AB4284F29B0F3EB001154DD /* VideoManager.swift */,
 				7AB4285129B0F51A001154DD /* Views */,
 				7ACDCE1029AB475E00743DD3 /* Components */,
 				7ACDCE0629AB44B400743DD3 /* Assets.xcassets */,
 				7ACDCE0829AB44B400743DD3 /* Preview Content */,
-				7AB4284F29B0F3EB001154DD /* VideoManager.swift */,
 			);
 			path = PexelsVids;
 			sourceTree = "<group>";
