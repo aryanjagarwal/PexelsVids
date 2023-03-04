@@ -24,7 +24,7 @@ struct Video: Identifiable, Decodable {
     var image: String
     var duration: Int
     var user: User
-    var videoFile: [VideoFile]
+    var videoFiles: [VideoFile]
     
     struct User: Identifiable, Decodable {
         var id: Int
