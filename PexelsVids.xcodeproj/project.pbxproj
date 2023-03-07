@@ -11,6 +11,7 @@
 		7AB4285329B0F6E3001154DD /* VideoCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4285229B0F6E3001154DD /* VideoCard.swift */; };
 		7AB4285729B306D5001154DD /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4285629B306D5001154DD /* ModelData.swift */; };
 		7AB4285929B30BC6001154DD /* VideoData.json in Resources */ = {isa = PBXBuildFile; fileRef = 7AB4285829B30BC6001154DD /* VideoData.json */; };
+		7AB4285B29B32A8A001154DD /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB4285A29B32A8A001154DD /* VideoView.swift */; };
 		7ACDCE0329AB44B300743DD3 /* PexelsVidsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */; };
 		7ACDCE0529AB44B300743DD3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0429AB44B300743DD3 /* ContentView.swift */; };
 		7ACDCE0729AB44B400743DD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7ACDCE0629AB44B400743DD3 /* Assets.xcassets */; };
@@ -23,6 +24,7 @@
 		7AB4285229B0F6E3001154DD /* VideoCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoCard.swift; sourceTree = "<group>"; };
 		7AB4285629B306D5001154DD /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
 		7AB4285829B30BC6001154DD /* VideoData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoData.json; sourceTree = "<group>"; };
+		7AB4285A29B32A8A001154DD /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		7ACDCDFF29AB44B300743DD3 /* PexelsVids.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PexelsVids.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7ACDCE0229AB44B300743DD3 /* PexelsVidsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PexelsVidsApp.swift; sourceTree = "<group>"; };
 		7ACDCE0429AB44B300743DD3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 			isa = PBXGroup;
 			children = (
 				7ACDCE0429AB44B300743DD3 /* ContentView.swift */,
+				7AB4285A29B32A8A001154DD /* VideoView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7ACDCE0529AB44B300743DD3 /* ContentView.swift in Sources */,
+				7AB4285B29B32A8A001154DD /* VideoView.swift in Sources */,
 				7AB4285329B0F6E3001154DD /* VideoCard.swift in Sources */,
 				7ACDCE1229AB479400743DD3 /* QueryTag.swift in Sources */,
 				7ACDCE0329AB44B300743DD3 /* PexelsVidsApp.swift in Sources */,
