@@ -24,6 +24,6 @@ struct QueryTag: View {
 
 struct QueryTag_Previews: PreviewProvider {
     static var previews: some View {
-        QueryTag(query: Query.food, isSelected: true)
+        QueryTag(query: Query.girl, isSelected: true)
     }
 }

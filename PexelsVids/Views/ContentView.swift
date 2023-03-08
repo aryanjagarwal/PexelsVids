@@ -8,22 +8,43 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var videoManager = VideoManager()
+    var columns = [GridItem(.adaptive(minimum: 160), spacing: 20)]
+    
     var body: some View {
-        VStack {
-            HStack {
-                ForEach(Query.allCases, id: \.self) {
-                    SearchQuery in
-                    QueryTag(query: SearchQuery, isSelected: false)
-                }
+        NavigationView {
+            VStack {
+                HStack {
+                    ForEach(Query.allCases, id: \.self) { SearchQuery in
+                        QueryTag(query: SearchQuery, isSelected: videoManager.selectedQuery == SearchQuery).onTapGesture {
+                            videoManager.selectedQuery = SearchQuery
+                        }
+                    }
             }
             
             ScrollView {
-                VideoCard(video: previewVideo)
+                if videoManager.videos.isEmpty {
+                    ProgressView()
+                } else {
+                    LazyVGrid(columns: columns, spacing: 20) {
+                        ForEach(videoManager.videos, id: \.id) { video
+                            in
+                            NavigationLink {
+                                VideoView(video: video)
+                            } label: {
+                                VideoCard(video: video)
+                            }
+                        }
+                    }
+                    .padding()
+                }
             }
             .frame(maxWidth: .infinity)
         }
         .background(Color("AccentColor"))
+        .navigationBarHidden(true)
     }
+  }
 }
 
 struct ContentView_Previews: PreviewProvider {

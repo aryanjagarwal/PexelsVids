@@ -8,7 +8,7 @@
 import Foundation
 
 enum Query: String, CaseIterable {
-    case nature, animals, people, ocean, food
+    case nature, animals, city, asian, girl
 }
 
 class VideoManager: ObservableObject {
@@ -29,7 +29,7 @@ class VideoManager: ObservableObject {
     
     func findVideos(topic: Query) async {
         do {
-            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=10&orientation=portrait") else {fatalError("Missing URL")}
+            guard let url = URL(string: "https://api.pexels.com/videos/search?query=\(topic)&per_page=20&orientation=portrait") else {fatalError("Missing URL")}
             
             var urlRequest = URLRequest(url: url)
             urlRequest.setValue("563492ad6f9170000100000112cf082066f74d25a682ec4abaf4a461", forHTTPHeaderField: "Authorization")
@@ -42,8 +42,10 @@ class VideoManager: ObservableObject {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             let decodedData = try decoder.decode(ResponseBody.self, from: data)
             
-            self.videos = []
-            self.videos = decodedData.videos
+            DispatchQueue.main.async {
+                self.videos = []
+                self.videos = decodedData.videos
+            }
             
         } catch {
             print("Error fetching data from pexels: \(error)")
